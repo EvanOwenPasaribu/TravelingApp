@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay_light_90"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="@dimen/spacing_small"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="Register"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/white" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_mlarge">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableRight="@drawable/ic_person_outline"
+                        android:drawableTint="@color/grey_40"
+                        android:hint="Nama"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableRight="@drawable/ic_person_outline"
+                        android:drawableTint="@color/grey_40"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableRight="@drawable/ic_email"
+                        android:drawableTint="@color/grey_40"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableRight="@drawable/ic_lock_outline"
+                        android:drawableTint="@color/grey_40"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <EditText
+                        android:id="@+id/et_password_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableRight="@drawable/ic_lock_outline"
+                        android:drawableTint="@color/grey_40"
+                        android:hint="Konfirmasi Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_large" />
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_button_primary"
+                        android:text="Register"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_mlarge" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
